@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Work Sans', sans-serif;
+
+}
+
+
+body	{
+font-size: 1.1rem;
+min-height: 100%;
+max-width: 80%;
+margin-right: auto;
+margin-left: auto;}
+
+html{height: 100%;}
+
+.container	{display: grid;
+			 grid-template-areas: 
+			 "header"
+			 "slider"
+			 "formuario"
+			 "staffone"
+			 "stafftwo"
+			 "staffthree"
+			 "footer";}
+
+.header	{
+	grid-area: header;
+}
+
+.slider	{
+	grid-area: slider;
+
+}
+
+.formulario	{
+	grid-area: formulario;
+	background-color: #fff8f2;
+	align-content: center;
+	text-align: center;
+
+}
+
+.staffone	{
+	grid-area: staffone;
+	background-color: #fffcfa;
+	align-content: center;
+	text-align: center;
+}
+
+.stafftwo	{
+	grid-area: stafftwo;
+	background-color: #fffcfa;
+	align-content: center;
+	text-align: center;
+}
+
+
+.footer	{
+	grid-area: footer;
+	align-content: center;
+	text-align: center;
+	
+}
+
+
+@media (min-width: 1000px) {
+         .container{
+         	grid-template:
+         	"header			header			header"       	   200px
+         	"slider			slider 			formulario"        300px
+         	"staffone 		stafftwo    	stafftwo"          250px 
+         	"footer 		footer      	footer"            100px /
+         	 33%          	  34%              33%;
+         }
+}
+
+
+.hr1 {width: 70%;
+height: 1px;
+margin-left: auto;
+margin-right: auto;
+align-content: center;
+color:#b01300;
+ }
+
+#gana	{font-weight: 400;
+		font-size: 3rem;
+		color: #98615e;
+		margin-top: 2%;
+		text-align: center;}
+
+.logo1 {height: 50px;
+		text-align: center;
+			margin-left: 37%;
+			margin-right: 37%;
+		margin-top: 2%;}
+
+.formulario1	{margin-left: auto;
+	margin-right: auto;}
+
+
+.inscripción	{font-weight: 400;
+					font-size: 2rem;
+					margin-top: 5%;}
+
+
+.titulosform {font-weight: 400;
+			  font-size: 1rem;
+			  margin-top: 3%;
+			  margin-bottom: 3%;
+			  text-align: center;}
+
+.cajitas	{border-radius: 10px;
+			box-shadow: 7px 7px 7px rgba(172,172,172,0.7);
+			height: 30px;
+			width: 250px;
+			border-width: 1px;
+			border-color: #acacac;}
+
+.caja1	{border-radius: 10px;
+			box-shadow: 7px 7px 7px rgba(172,172,172,0.7);
+			height: 30px;
+			width: 150px;
+			border-width: 1px;
+			border-color: #acacac;
+			background-color: #ddcebc;
+			font-weight: 400;
+			font-size: 1.1rem;}
+.caja1:hover	{transform: scale(1.2);
+	transition: all ease 0.3s;}
+
+
+
+.info	{margin-top: 3%;}
+
+
+.info a {
+color: #98615e;
+font-weight: 400;
+text-decoration: none;
+font-size: 1.3rem;
+background-color: #fffcfa;
+}
+
+ 
+.titulobenef	{font-size: 1.3rem;
+margin-top: 30%;
+font-weight: 400;
+text-align: right;
+}
+
+.titulobeneficios	{
+	margin-top: 3%;
+	font-size: 1.2rem;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-weight: 200;
+	}
+
+.titulobeneficios li {
+list-style: none;}
+
+.titulobeneficios li:hover {color: #98615e;
+font-size: 1.3rem;
+font-weight: 400;}
+
+.beneficio	{margin-bottom: 1%;
+list-style: none;}
+
+.tijeras {height: 30px;
+margin-right: 2%;}
+
+footer p a {font-weight: 500;
+			color: #000000;}
+
+.logoinsta {height: 40px;
+margin-top: 3%;
+margin-right: 2%;
+margin-bottom: 3%;}
+
+.seguir1	{
+margin-top: 3%;}
+
+.hr2 {margin-top: 3%;
+width: 70%;
+height: 1px;
+margin-left: auto;
+margin-right: auto;
+align-content: center;
+color:#b01300;
+ }
+
+.slider	{height: 300px;
+overflow: hidden;}
+
+.slider ul {padding: 0;
+display: flex;
+width: 400%;
+
+animation: cambio 20s infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in;}
+
+.slider li {list-style: none;
+width: 100%;}
+
+.slider img {width: 100%;
+height: 300px;}
+
+.link {
+color: #000000;}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+@media (max-width: 1000px) {
+         .container{
+         	grid-template:
+         	"header			header"       	   200px
+         	"formulario 	formulario"        300px
+            "slider 	    slider"            300px
+         	"staffone 		stafftwo"          300px 
+         	"footer 		footer"            100px /
+         	50%          	 50%              ;
+}
+
+
+.logo1 {height: 50px;
+			margin-left: 33%;
+			margin-top: 2%;}
+
+#gana	{font-weight: 400;
+		font-size: 3rem;
+		color: #98615e;
+		margin-top: 4%;
+		text-align: center;}
+
+
+.titulobenef	{font-size: 1.3rem;
+margin-top: 33%;
+font-weight: 400;
+text-align: center;
+}
+
+.titulobeneficios	{
+	margin-top: 5%;
+	font-size: 1.2rem;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-weight: 200;
+	}
+
+
+
+
+
+@media (max-width: 800px) {
+         .container{
+         	grid-template:
+         	"header"       	   220px
+         	"formulario"       300px
+            "slider"           200px
+         	"staffone"         80px 
+         	"stafftwo"         320px  
+         	"footer"           100px /
+         	   100%              ;
+}
+
+
+.logo1 {height: 50px;
+			margin-left: 21%;
+			margin-top: 2%;}
+
+#gana	{font-weight: 400;
+		font-size: 3rem;
+		color: #98615e;
+		margin-top: 4%;
+		text-align: center;}
+
+	.titulobenef	{font-size: 1.3rem;
+margin-top: 10%;
+font-weight: 400;
+text-align: center;
+}
+
+.info a {
+color: #98615e;
+}
+
+.slider li img {height: 200px;}
+
+
+
+
